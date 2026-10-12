@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Jardim | Matrículas Abertas 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">Escola <span>Jardim</span> 🌿</h1>
+            <a href="#agendar" class="btn-header">Agendar Visita</a>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">Matrículas Abertas</span>
+            <h2>O lugar onde o futuro do seu filho começa a florescer</h2>
+            <p>Educação humanizada, ambiente seguro e metodologia inovadora da Educação Infantil ao Ensino Fundamental.</p>
+            <a href="#agendar" class="btn-primary">Garantir Vaga do Meu Filho</a>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="container section">
+        <h2 class="section-title">Por que escolher a Escola Jardim?</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Ensino Humanizado</h3>
+                <p>Respeitamos o tempo de aprendizado e o desenvolvimento individual de cada criança.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Atividades Integradas</h3>
+                <p>Artes, música, robótica e incentivo ao contato constante com a natureza.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h3>Segurança & Acolhimento</h3>
+                <p>Estrutura moderna, monitoramento e uma equipe pedagógica altamente qualificada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Agendamento (Lead Capture) -->
+    <section id="agendar" class="form-section">
+        <div class="container form-container">
+            <div class="form-info">
+                <h2>Venha conhecer nosso espaço!</h2>
+                <p>Preencha os dados ao lado para agendar uma visita guiada com nossa equipe pedagógica.</p>
+            </div>
+
+            <form id="form-visita" class="card-form" novalidate>
+                <h3>Agende sua Visita</h3>
+
+                <div class="input-group">
+                    <label for="nome">Nome do Responsável</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                    <span class="error-msg" id="erro-nome"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail de Contato</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                    <span class="error-msg" id="erro-email"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" placeholder="(31) 99999-9999">
+                    <span class="error-msg" id="erro-telefone"></span>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal de Sucesso (Aparece via JS) -->
+    <div id="modal-sucesso" class="modal">
+        <div class="modal-content">
+            <span class="modal-icon">🎉</span>
+            <h3>Agendamento Solicitado!</h3>
+            <p id="modal-mensagem">Obrigado! Entraremos em contato em breve para confirmar o horário da sua visita.</p>
+            <button id="btn-fechar-modal">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Escola Jardim. Todos os direitos reservados. Desenvolvido por Thiago Fraga.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
